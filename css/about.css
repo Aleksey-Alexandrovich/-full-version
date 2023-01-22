@@ -1,0 +1,199 @@
+
+.about {
+	padding: 70px 0px;
+}
+.about__container {
+
+}
+.about__content {
+	display: flex;
+	
+}
+
+
+.about__text {
+	max-width: calc(278px + 392 * (100vw / 1920));
+	margin-right: 42px;
+}
+
+
+.page-title {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(40px + 40 * (100vw / 1920));
+	line-height: 116px;
+	color: #000000;
+	
+}
+
+
+.page-text {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(16px + 8 * (100vw / 1920));
+	line-height: 35px;
+	color: #000000;
+
+}
+
+
+.page-text--margin--bottom {
+	margin-bottom: calc(15px + 25 * (100vw / 1920));
+}
+.page-title--margin--bottom {
+	margin-bottom: calc(15px + 25 * (100vw / 1920));
+}
+
+.about__img {
+	position: relative;
+
+}
+
+.about__img::after {
+	content:"";
+	background-image: url("../images/icons/woodtwo.svg");
+	background-repeat: no-repeat;
+	display: block;
+	width: 207px;
+	height: 267.5px;
+	position: absolute;
+	right: -63px;
+	bottom: -36px;
+}
+
+.about__img::before {
+	content: "";
+	display: block;
+	background-repeat: no-repeat;
+	outline: 1px solid #000000;
+	width: 452px;
+	height: 459px;
+	position: absolute;
+	top: 55px;
+  left: 51px;
+}
+@media(max-width: 1389.98px) {	
+	.page-title {
+		font-size: calc(16px + 64 * (100vw / 1440));
+
+	}
+
+	.page-text {
+		font-size: calc(16px + 8 * (100vw / 1440));
+	}
+
+	.page-title--margin--bottom {
+		margin-bottom: calc(15px + 25 * (100vw / 1440));
+	}
+	
+
+	.about__text {
+		max-width: calc(276px + 392 * (100vw/ 1440));
+		
+	}
+	
+
+}
+
+
+@media(max-width: 1180px) {
+	.about__img {
+		max-width: 300px;
+	}
+
+	.about__img::after {
+		width: 247px;
+    height: 322.5px;
+	}
+
+	.about__img::before {
+		width: 272px;
+    height: 287px;
+    top: 52px;
+    left: 51px;
+	}
+		
+
+
+	}
+
+
+	@media(max-width: 980px) {
+		.about__img {
+			display: none;
+		}
+	
+		.page-title {
+			text-align: center;
+		}
+			
+		.page-text {
+			text-align: center;
+			
+		}
+	
+		.about__content {
+			justify-content: center;
+			position: relative;
+		}
+	
+		.about__content::after {
+				content:"";
+				background: url("../images/icons/decoreight.svg") no-repeat;
+				width: 150px;
+				height: 195px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: -5;
+			
+			}
+	
+			
+			.about__text {
+				margin-right: 0;
+			}
+	
+	}
+
+	@media(max-width: 760px) {
+		.about__text {
+			
+			
+		}
+		.page-text {
+			
+		}
+
+		.about__content::after{
+			bottom: -61px;
+			right: 204px;
+
+		}
+
+
+	}
+
+
+	@media(max-width:425px) {
+		.about__content::after{
+			bottom: -61px;
+    	right: 10px;
+		}
+
+		.page__title {
+			line-height: 0;
+		}
+
+		.page-title--margin--bottom {
+			margin-bottom: 15px;
+			line-height: 28px;
+		}
+
+		
+	}
+
+
+

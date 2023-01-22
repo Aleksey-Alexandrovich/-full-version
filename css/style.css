@@ -1,0 +1,17 @@
+
+/*Подключение через импорт стилей***/
+
+@import"normalize.css";
+@import"global.css";
+@import"header.css";
+@import"mebelmaker.css";
+@import"footer.css";
+@import"about.css";
+@import"privilige.css";
+@import"work.css";
+@import"slider.css";
+@import"variables.css";
+@import"reviews.css";
+@import"form.css";
+@import"main.css";
+@import"burger.css";

@@ -1,0 +1,55 @@
+.footer {
+	background: #15346D;
+	
+}
+
+
+.footer__container {
+	min-height: 80px;
+
+}
+.footer__box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.copyright {
+	font-family: 'Jost';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 35px;
+	color: #FFFFFF;
+
+}
+
+.copyright:hover {
+	color: #C5D1E7;
+}
+
+/* ----------Медиа запрос для футера -----------------*/
+
+@media(max-width: 740px) {
+	.contacts {
+		display: none;
+	}
+
+	.footer__box {
+		padding-top: 20px;
+		flex-direction: column-reverse;
+		
+
+	}
+
+	.footer__container {
+		min-height: 115px;
+	}
+
+	.logo__mebel-maker{
+		margin-bottom: 12px;
+	}
+	
+}
+

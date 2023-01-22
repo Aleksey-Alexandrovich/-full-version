@@ -1,0 +1,193 @@
+
+
+@font-face {
+  font-family: Jost;
+  src: local("Jost-Regular"), local("Jost-Regular"),
+  url("../fonts/Jost-Regular.ttf");
+	font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local("Jost-Light"), local("Jost-Light"),
+  url("../fonts/Jost-Light.ttf");
+	font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local("Jost-LightItalic"), local("Jost-LightItalic"),
+  url("../fonts/Jost-LightItalic.ttf");
+	font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local("Jost-Italic"), local("Jost-Italic"),
+  url("../fonts/Jost-Italic.ttf");
+	font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local("Jost-Medium"), local("Jost-Medium"),
+  url("../fonts/Jost-Medium.ttf");
+	font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Jacques Francois';
+  src: local("JacquesFrancois-Regular"), local("JacquesFrancois-Regular"),
+  url("../fonts/JacquesFrancois-Regular.ttf");
+	font-style: normal;
+  font-weight: 400;
+}
+
+
+html {
+	overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+	font-size: calc(10 * 100vw / 1920);
+	scroll-behavior: smooth; 
+	
+	
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+  font-family: 'Jacques Francois', serif;
+	color: #000000;
+
+}
+
+/*-----------------------------------------Контейнеры------------------------------*/
+
+
+
+.wrapper {
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+
+
+
+[class*="__container"] {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+/*PC*/
+@media(max-width: 1400px) {
+	[class*="__container"] {
+		max-width: 1240px;
+	}
+	
+}
+
+/*Tablet*/
+
+@media(max-width: 980px) {
+	[class*="__container"] {
+		max-width: 800px;
+	}
+
+}
+/* Mobile */
+
+@media(max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: 100%;
+	}
+
+}
+
+
+
+
+
+
+img, svg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+	margin: 0;
+  cursor: pointer;
+	border: none;
+	
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+blockquote {
+	margin: 0;
+	
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+	padding: 0;
+
+}
+
+iframe {
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+
+
+
+

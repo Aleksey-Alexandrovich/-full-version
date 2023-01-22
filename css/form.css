@@ -1,0 +1,129 @@
+.form {
+	position: relative;
+	
+}
+
+
+.form__container {
+	background-repeat: no-repeat;
+	background-image: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%), url("../images/img/orderPhoto.png");
+	background-position: right;
+	
+	
+	
+}
+
+
+
+.request {
+	padding-top: 70px;
+	padding-bottom: 119px;
+}
+.form__title {
+	font-family: 'Jost';
+	font-weight: 400;
+	font-size: calc(36px + 44 * (100vw / 1920));
+	line-height: 83px;
+	margin-bottom: 16px;
+	max-width: 1000px;
+	
+
+}
+
+.form__subtitle {
+	font-family: 'Jost';
+	font-weight: 300;
+	font-size: calc(16px + 16 * (100vw / 1920));
+	line-height: 46px;
+	margin-bottom: 81px;	
+	max-width: 988px;
+
+}
+.form__fieldset {
+	border: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	
+}
+.form__input {
+	padding: 0px 20px;
+	margin-bottom: 40px;
+	font-family: 'Jost';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 35px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	max-width: 555px;
+	background-color: transparent;
+	
+}
+
+.form__input:not(:first-child) {
+	margin-bottom: 65px;
+}
+
+.button {
+
+}
+
+/*---------------------------Медиа запрос для формы-----------------------*/
+
+@media(max-width: 982px) {
+
+	
+	.form__container {
+		width: 100%;
+		background-image: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%),url("../images/img/mini.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		
+		
+		
+	}
+	
+
+
+
+	.form__fieldset {
+		align-items: center;
+		position: relative;
+	}
+
+	.form__title {
+		text-align: center;
+		margin: 0 auto;
+  
+    line-height: 60px;
+		margin-bottom: 34px;
+		
+	}
+
+	.form__subtitle {
+		text-align: center;
+		font-weight: 400;
+		font-size: 18px;
+    margin: 0 auto;
+		line-height: 34px;
+		margin-bottom: 56px;
+}
+		
+	
+}
+
+@media(max-width: 425px) {
+	.form__title {
+		line-height: 44px;
+	}
+
+	.form__input:focus {
+		outline: 2px solid #6D5BD0;
+		border-bottom: none;
+	}
+	
+
+
+}
